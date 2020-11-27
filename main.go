@@ -8,16 +8,15 @@ import (
 )
 
 type Server struct {
-
 }
 
-func (s *Server) simpleHttp( w http.ResponseWriter, r *http.Request) {
+func (s *Server) simpleHttp(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("got simple\n")
-  fmt.Fprintf(w,"testing testing 1,2,3")
+	fmt.Fprintf(w, "XXXXXXXXXXX testing testing 1,2,3")
 }
 
 func (s *Server) routes() {
-  http.HandleFunc("/testfunction", s.simpleHttp)
+	http.HandleFunc("/testfunction", s.simpleHttp)
 }
 
 func (s *Server) run() {
@@ -26,9 +25,8 @@ func (s *Server) run() {
 		port = "8080"
 	}
 	fmt.Printf("port used is %s\n", port)
-	log.Fatal(http.ListenAndServe(":"+port,nil))
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
-
 
 func main() {
 

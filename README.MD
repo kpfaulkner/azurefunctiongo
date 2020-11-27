@@ -1,5 +1,6 @@
 This is purely an example of how to write an Azure Function in Go.
-This is all based off the Azure Custom Handlers ( see https://docs.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers )
+This is all based off the Azure Custom Handlers ( see https://docs.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers , https://github.com/Azure-Samples/functions-custom-handlers/tree/master/go )
+
 
 Instructions:
 
